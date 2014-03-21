@@ -7,30 +7,38 @@
 
 <body>
 <div id="wrapper">
-	<div id="header">
-		<header>
-			<div id="header_title">Каталог товаров</div>
-			<div id="header_right_icons">				
-				<a href="search.php" class="header_search">Поиск</a>
-				<div class="barcode"></div>
+	<main id="content_region">
+		<div>
+			<div id="header_region">
+				<div id="header">
+					<header>
+						<div id="header_title">Каталог товаров</div>
+						<div id="header_right_icons">				
+							<a href="search.php" class="header_search">Поиск</a>
+							<div class="barcode"></div>
+						</div>
+					</header>
+					<div id="toggle_menu">Меню</div>
+				</div>
 			</div>
-		</header>
-		<div id="toggle_menu">Меню</div>
-	</div>
-	<div id="content_area">	
-		<div id="search">
-			<form action="#">
-				<div class="input_text_wrap"><input type="search" placeholder="Введите название товара" id="search_text" autocomplete="on"></div>
-				<input type="submit" class="search_button">
-			</form>
+			<section id="section_region">
+				<div id="content_area">	
+					<div id="search">
+						<form action="#">
+							<div class="input_text_wrap"><input type="search" placeholder="Введите название товара" id="search_text" autocomplete="on"></div>
+							<input type="submit" class="search_button">
+						</form>
+					</div>
+					<div id="empty_search_result">
+						<p>Товар не найден.<br>Попробуйте перейти к поиску</p>
+						<a href="#" class="google_button">Google</a>
+						<p>Если и google вам не помог, то вы можете быть первым кто добавит информацию в интернет</p>
+						<a href="#" class="add_tovar_button">Добавить новый товар</a>
+					</div>
+				</div>
+			</section>
 		</div>
-		<div id="empty_search_result">
-			<p>Товар не найден.<br>Попробуйте перейти к поиску</p>
-			<a href="#" class="google_button">Google</a>
-			<p>Если и google вам не помог, то вы можете быть первым кто добавит информацию в интернет</p>
-			<a href="#" class="add_tovar_button">Добавить новый товар</a>
-		</div>
-	</div>
+	</main>
 
 	<? include './mobile/php/slide_panel.php'; ?>
 	

@@ -7,52 +7,59 @@
 
 <body>
 <div id="wrapper">
-	<div class="bg_color_wrap">
-		<div id="header_action_list">
-			<div href="#" class="header_action_list_left"></div>
-			<div class="header_action_list_right">Мои любимые товары</div>
-		</div>
-		<div id="header">
-			<header>
-				<div id="header_title">Списки покупок</div>
-				<div id="total_number">6</div>
-			</header>
-			<div id="toggle_menu">Меню</div>
-		</div>
-		<div id="content_area">		
-			<div id="shopping_lists">
-				<div class="shopping_lists_item received"><p>Продукты на 8 марта</p><span></span></div>
-				<div class="shopping_lists_item have_info"><p>Мои любимые товары</p><div class="information"></div><span>23</span><div class="chekbox"></div></div>
-				<div class="shopping_lists_item have_info"><p>Мои любимые товары которые я ем каждый день на завтрак</p><div class="information"></div><span>23</span><div class="chekbox"></div></div>
-				<div class="shopping_lists_item"><p>Мои любимые товары</p><span>23</span><div class="chekbox"></div></div>
-				<div class="shopping_lists_item"><p>Мои любимые товары которые я ем каждый день на завтрак</p><span>23</span><div class="chekbox"></div></div>	
-				<div class="shopping_lists_item"><p>Мои любимые товары</p><span>586</span><div class="chekbox"></div></div>
-				<div class="shopping_lists_item"><p>Мои любимые товары</p><span>2</span><div class="chekbox"></div></div>
-				<div class="shopping_lists_item"><p>Мои любимые товары</p><span>376</span><div class="chekbox"></div></div>					
+	<main id="content_region">
+		<div>
+			<div id="header_region">
+				<div id="header_action_list">
+					<div href="#" class="header_action_list_left"></div>
+					<div class="header_action_list_right">Мои любимые товары</div>
+				</div>
+				<div id="header">
+					<header>
+						<div id="header_title">Списки покупок</div>
+						<div id="total_number">6</div>
+					</header>
+					<div id="toggle_menu">Меню</div>
+				</div>	
+			</div>
+			<section id="section_region">
+				<div class="bg_color_wrap">
+					<div id="content_area">		
+						<div id="shopping_lists">
+							<div class="shopping_lists_item received"><p>Продукты на 8 марта</p><span></span></div>
+							<div class="shopping_lists_item have_info"><p>Мои любимые товары</p><div class="information"></div><span>23</span><div class="chekbox"></div></div>
+							<div class="shopping_lists_item have_info"><p>Мои любимые товары которые я ем каждый день на завтрак</p><div class="information"></div><span>23</span><div class="chekbox"></div></div>
+							<div class="shopping_lists_item"><p>Мои любимые товары</p><span>23</span><div class="chekbox"></div></div>
+							<div class="shopping_lists_item"><p>Мои любимые товары которые я ем каждый день на завтрак</p><span>23</span><div class="chekbox"></div></div>	
+							<div class="shopping_lists_item"><p>Мои любимые товары</p><span>586</span><div class="chekbox"></div></div>
+							<div class="shopping_lists_item"><p>Мои любимые товары</p><span>2</span><div class="chekbox"></div></div>
+							<div class="shopping_lists_item"><p>Мои любимые товары</p><span>376</span><div class="chekbox"></div></div>					
+						</div>
+					</div>					
+				</div>
+			</section>
+			<div id="footer_region">
+				<div id="footer">
+					<button href="#add_shopping_lists_modal" class="add_button">Новый список</button>		
+					<div id="footer_action_list">
+						<a href="#" class="edit"><span class="button_text">Изменить</span></a>
+						<a href="#" class="copy"><span class="button_text">Копировать</span></a>
+						<a href="#" class="delete"><span class="button_text">Удалить</span></a>
+						<a href="#submit_list" class="submit"><span class="button_text">Отправить</span></a>
+					</div>
+					<div id="footer_select_button"><span class="button_text">Выделить</span></div>
+				</div>	
 			</div>
 		</div>
-		
-		<div id="footer">
-			<button href="#add_shopping_lists_modal" class="add_button">Новый список</button>		
-			<div id="footer_action_list">
-				<a href="#" class="edit"><span class="button_text">Изменить</span></a>
-				<a href="#" class="copy"><span class="button_text">Копировать</span></a>
-				<a href="#" class="delete"><span class="button_text">Удалить</span></a>
-				<a href="#submit_list" class="submit"><span class="button_text">Отправить</span></a>
-			</div>
-			<div id="footer_select_button"><span class="button_text">Выделить</span></div>
-		</div>
-		<div id="add_shopping_lists_modal">
-		  <div class="modal_head">Создать список</div>
-		  <div class="modal_content">Введите название</div>
-		  <div class="modal_footer">OK</div>
-		</div>	
-	
+	</main>
 	<? include './mobile/php/slide_panel.php'; ?>
-		
-	</div>
-	
 </div>
+
+<div id="add_shopping_lists_modal">
+	<div class="modal_head">Создать список</div>
+	<div class="modal_content">Введите название</div>
+	<div class="modal_footer">OK</div>
+</div>		
 	
 <div id="modal_window" class="modal_window">
 	<div class="modal_window_header">Создать список</div>

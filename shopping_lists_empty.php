@@ -7,44 +7,48 @@
 
 <body>
 <div id="wrapper">
-	<div class="empty_content_wrap">
-		<div id="header_action_list">
-			<div href="#" class="header_action_list_left"></div>
-			<div class="header_action_list_right">Мои любимые товары</div>
-		</div>
-		<div id="header">
-			<header>
-				<div id="header_title">Мои списки покупок</div>
-				<div id="total_number">6</div>
-			</header>
-			<div id="toggle_menu">Меню</div>
-		</div>
-		<div id="content_area">	
-			<div id="empty_list" class="empty_block_content">
-				<img src="/mobile/images/empty_list_bg.png">
-				<p>Нет списков покупок.</p><p>Создайте новый!</p>
+	<main id="content_region">
+		<div>
+			<div id="header_region">
+				<div id="header">
+					<header>
+						<div id="header_title">Мои списки покупок</div>
+						<div id="total_number">6</div>
+					</header>
+					<div id="toggle_menu">Меню</div>
+				</div>
+			</div>
+			<section id="section_region">
+				<div class="empty_content_wrap">
+					<div id="content_area">	
+						<div id="empty_list" class="empty_block_content">
+							<img src="/mobile/images/empty_list_bg.png">
+							<p>Нет списков покупок.</p><p>Создайте новый!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div id="footer_region">
+				<div id="footer">
+					<button href="#add_shopping_lists_modal" class="add_button">Новый список</button>		
+					<div id="footer_action_list">
+						<a href="#" class="edit"></a>
+						<a href="#" class="copy"></a>
+						<a href="#" class="delete"></a>
+						<a href="#submit_list" class="submit"></a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div id="footer">
-			<button href="#add_shopping_lists_modal" class="add_button">Новый список</button>		
-			<div id="footer_action_list">
-				<a href="#" class="edit"></a>
-				<a href="#" class="copy"></a>
-				<a href="#" class="delete"></a>
-				<a href="#submit_list" class="submit"></a>
-			</div>
-			<!--<div id="footer_select_button"></div>-->
-		</div>
-		<div id="add_shopping_lists_modal">
-		  <div class="modal_head">Создать список</div>
-		  <div class="modal_content">Введите название</div>
-		  <div class="modal_footer">OK</div>
-		</div>	
-		
+	</main>
 	<? include './mobile/php/slide_panel.php'; ?>
-	
-	</div>
 </div>
+
+<div id="add_shopping_lists_modal">
+	<div class="modal_head">Создать список</div>
+	<div class="modal_content">Введите название</div>
+	<div class="modal_footer">OK</div>
+</div>	
 	
 <div id="modal_window" class="modal_window">
 	<div class="modal_window_header">Создать список</div>

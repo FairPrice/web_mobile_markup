@@ -7,66 +7,70 @@
 
 <body>
 <div id="wrapper">
-	<div id="header">
-		<header>
-			<div id="header_title">Каталог товаров</div>
-			<div id="header_right_icons">				
-				<div class="header_search"></div>
-				<div class="barcode"></div>
+	<main id="content_region">
+		<div>
+			<div id="header_region">
+				<div id="header">
+					<header>
+						<div id="header_title">Каталог товаров</div>
+						<div id="header_right_icons">				
+							<div class="header_search"></div>
+							<div class="barcode"></div>
+						</div>
+					</header>
+					<div id="toggle_menu">Меню</div>
+				</div>
 			</div>
-		</header>
-		<div id="toggle_menu">Меню</div>
-	</div>
-	<div id="content_area">
-		<div id="catalog_item">
-			<div class="catalog_item_img">
-				<img src="/mobile/images/catalog_item.jpg" />
-				<img class="disable" src="/mobile/images/icon/48/ic_action_replay.png" />
-				<img class="add" src="/mobile/images/add_imag_cart.png" />
-				<div class="item_poll"></div>
-			</div>	
-			<div class="catalog_item_content">
-				<div class="catalog_item_header">Каша УМНИЦА 5 ЗЛАКОВ</div>
-				<div class="catalog_item_text">для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке,<span>0.2 кг</span><span class="kod">4602804563852</span></div>
+			<section id="section_region">
+				<div id="content_area">
+					<div id="catalog_item">
+						<div class="catalog_item_img">
+							<img src="/mobile/images/catalog_item.jpg" />
+							<img class="disable" src="/mobile/images/icon/48/ic_action_replay.png" />
+							<img class="add" src="/mobile/images/add_imag_cart.png" />
+							<div class="item_poll"></div>
+						</div>	
+						<div class="catalog_item_content">
+							<div class="catalog_item_header">Каша УМНИЦА 5 ЗЛАКОВ</div>
+							<div class="catalog_item_text">для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке,<span>0.2 кг</span><span class="kod">4602804563852</span></div>
+						</div>
+					</div>
+					<ul id="sellers_list_tabs">
+						<li><a href="#seller_price">Цены</a></li>
+						<li><a href="#seller_content">Описание</a></li>
+					</ul>
+					<div id="sellers_list">
+						<div id="seller_price" class="tab_content">
+							<!--<div class="seller_price_item"><div class="no_name">Моя цена</div><div class="price"><em>834</em>15.04.2013</div></div>-->
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+							<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
+						</div>
+						<div id="seller_content" class="tab_content">для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке,</div>	
+					</div>
+				</div>
+			</section>
+			<div id="footer_region">
+				<div id="footer">
+					<div id="footer_action">
+						<button id="add_to_list"><span class="button_text">В список</span></button>
+						<button id="add_price"><span class="button_text">Доб.цену</span></button>
+						<button id="edit"><span class="button_text">Изменить</span></button>
+						<button id="add_to_favorit"><span class="button_text">Избранное</span></button>
+					</div>
+				</div>
 			</div>
 		</div>
-		<ul id="sellers_list_tabs">
-			<li><a href="#seller_price">Цены</a></li>
-			<li><a href="#seller_content">Описание</a></li>
-		</ul>
-		<div id="sellers_list">
-			<div id="seller_price" class="tab_content">
-				<!--<div class="seller_price_item"><div class="no_name">Моя цена</div><div class="price"><em>834</em>15.04.2013</div></div>-->
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-				<div class="seller_price_item"><div class="name"><em>Перекрёсток</em>пр-т Тракторостроителей, 76</div><div class="price"><em>834</em>15.04.2013</div></div>
-			</div>
-			<div id="seller_content" class="tab_content">для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке, для детского питания, молочная с земляникой и тыквой, с 6 месяцев, в картоной коробке,</div>	
-		</div>
-
-	</div>
-	
-	<div id="footer">
-		<div id="footer_action">
-			<button id="add_to_list"><span class="button_text">В список</span></button>
-			<button id="add_price"><span class="button_text">Доб.цену</span></button>
-			<button id="edit"><span class="button_text">Изменить</span></button>
-			<button id="add_to_favorit"><span class="button_text">Избранное</span></button>
-		</div>
-	</div>
-
+	</main>
+	<? include './mobile/php/slide_panel.php'; ?>
 	<div id="download_app">
 		<div class="close"></div>
 		<a href="http://play.google.com/store/apps/details?id=ru.chestnayacena.fairprice.android">Скачать приложение</a>
-	</div>
-	
-	
-	
-	<? include './mobile/php/slide_panel.php'; ?>
-	
+	</div>	
+</div>	
 	
 	<div id="add_price_window" class="modal_window">
 		<div class="modal_window_header">Добавить цену</div>
@@ -155,7 +159,7 @@
 	});
 	</script>
 	
-</div>
+
 
 </body>
 </html>

@@ -7,40 +7,39 @@
 
 <body>
 <div id="wrapper">
-	<div class="empty_content_wrap">
-		<div id="header">
-			<header>
-				<div id="header_title">Избранные товары</div>
-				<div id="total_number">29</div>
-			</header>
-			<div id="toggle_menu">Меню</div>
-		</div>
-		<div id="content_area">
-			<div id="favorit_empty" class="empty_block_content">
-				<img src="/mobile/images/favorit_empty.png">
-				<p>Товары не выбраны.</p><p>Добавляйте с помощью кнопок </p>
-				<!--
-				<div class="favorit_empty_links">
-					<a href="#" class="add_product">Добавить товар</a>
-					<a href="#" class="add_favorit">В избранное</a>
+	<main id="content_region">
+		<div>
+			<div id="header_region">
+				<div id="header">
+					<header>
+						<div id="header_title">Избранные товары</div>
+						<div id="total_number">29</div>
+					</header>
+					<div id="toggle_menu">Меню</div>
 				</div>
-				-->
+			</div>
+			<section id="section_region">
+				<div class="empty_content_wrap">
+					<div id="content_area">
+						<div id="favorit_empty" class="empty_block_content">
+							<img src="/mobile/images/favorit_empty.png">
+							<p>Товары не выбраны.</p><p>Добавляйте с помощью кнопок </p>
+						</div>
+					</div>					
+				</div>
+			</section>
+			<div id="footer_region">
+				<div id="footer">
+					<div id="popup_add_tovar">
+						<a href="#" class="add_tovar_by_name">Добавить по наименованию</a>
+						<a href="#" class="add_tovar_by_kod">Сканировать штрихкод</a>
+					</div>	
+					<button class="add_product">Добавить товар</button>	
+				</div> 
 			</div>
 		</div>
-		
-		<div id="footer">
-			<div id="popup_add_tovar">
-				<a href="#" class="add_tovar_by_name">Добавить по наименованию</a>
-				<a href="#" class="add_tovar_by_kod">Сканировать штрихкод</a>
-			</div>	
-			<button class="add_product">Добавить товар</button>	
-		</div> 
-		
-		
-		
+	</main>
 	<? include './mobile/php/slide_panel.php'; ?>	
-	
-	</div>
 </div>
 
 <div id="modal_window" class="modal_window">
